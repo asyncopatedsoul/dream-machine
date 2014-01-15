@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC5CE3BF1886445100439429 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5CE3BE1886445100439429 /* Foundation.framework */; };
+		EC5CE3C11886445100439429 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5CE3C01886445100439429 /* CoreGraphics.framework */; };
+		EC5CE3C31886445100439429 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5CE3C21886445100439429 /* UIKit.framework */; };
+		EC5CE3C51886445100439429 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5CE3C41886445100439429 /* SpriteKit.framework */; };
+		EC5CE3CB1886445100439429 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC5CE3C91886445100439429 /* InfoPlist.strings */; };
+		EC5CE3CD1886445100439429 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5CE3CC1886445100439429 /* main.m */; };
+		EC5CE3D11886445100439429 /* TKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5CE3D01886445100439429 /* TKAppDelegate.m */; };
+		EC5CE3D41886445100439429 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC5CE3D21886445100439429 /* Main_iPhone.storyboard */; };
+		EC5CE3D71886445100439429 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC5CE3D51886445100439429 /* Main_iPad.storyboard */; };
+		EC5CE3DA1886445100439429 /* TKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5CE3D91886445100439429 /* TKViewController.m */; };
+		EC5CE3DD1886445100439429 /* TKMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5CE3DC1886445100439429 /* TKMyScene.m */; };
+		EC5CE3DF1886445100439429 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5CE3DE1886445100439429 /* Spaceship.png */; };
+		EC5CE3E11886445100439429 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC5CE3E01886445100439429 /* Images.xcassets */; };
+		EC5CE3E81886445100439429 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5CE3E71886445100439429 /* XCTest.framework */; };
+		EC5CE3E91886445100439429 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5CE3BE1886445100439429 /* Foundation.framework */; };
+		EC5CE3EA1886445100439429 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5CE3C21886445100439429 /* UIKit.framework */; };
+		EC5CE3F21886445100439429 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC5CE3F01886445100439429 /* InfoPlist.strings */; };
+		EC5CE3F41886445100439429 /* Dream_MachineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5CE3F31886445100439429 /* Dream_MachineTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC5CE3EB1886445100439429 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC5CE3B31886445100439429 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC5CE3BA1886445100439429;
+			remoteInfo = "Dream Machine";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC5CE3BB1886445100439429 /* Dream Machine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dream Machine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC5CE3BE1886445100439429 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EC5CE3C01886445100439429 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EC5CE3C21886445100439429 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EC5CE3C41886445100439429 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		EC5CE3C81886445100439429 /* Dream Machine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Dream Machine-Info.plist"; sourceTree = "<group>"; };
+		EC5CE3CA1886445100439429 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EC5CE3CC1886445100439429 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EC5CE3CE1886445100439429 /* Dream Machine-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dream Machine-Prefix.pch"; sourceTree = "<group>"; };
+		EC5CE3CF1886445100439429 /* TKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKAppDelegate.h; sourceTree = "<group>"; };
+		EC5CE3D01886445100439429 /* TKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKAppDelegate.m; sourceTree = "<group>"; };
+		EC5CE3D31886445100439429 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		EC5CE3D61886445100439429 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		EC5CE3D81886445100439429 /* TKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKViewController.h; sourceTree = "<group>"; };
+		EC5CE3D91886445100439429 /* TKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKViewController.m; sourceTree = "<group>"; };
+		EC5CE3DB1886445100439429 /* TKMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKMyScene.h; sourceTree = "<group>"; };
+		EC5CE3DC1886445100439429 /* TKMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKMyScene.m; sourceTree = "<group>"; };
+		EC5CE3DE1886445100439429 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		EC5CE3E01886445100439429 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EC5CE3E61886445100439429 /* Dream MachineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dream MachineTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC5CE3E71886445100439429 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EC5CE3EF1886445100439429 /* Dream MachineTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Dream MachineTests-Info.plist"; sourceTree = "<group>"; };
+		EC5CE3F11886445100439429 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EC5CE3F31886445100439429 /* Dream_MachineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dream_MachineTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC5CE3B81886445100439429 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC5CE3C11886445100439429 /* CoreGraphics.framework in Frameworks */,
+				EC5CE3C31886445100439429 /* UIKit.framework in Frameworks */,
+				EC5CE3C51886445100439429 /* SpriteKit.framework in Frameworks */,
+				EC5CE3BF1886445100439429 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC5CE3E31886445100439429 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC5CE3E81886445100439429 /* XCTest.framework in Frameworks */,
+				EC5CE3EA1886445100439429 /* UIKit.framework in Frameworks */,
+				EC5CE3E91886445100439429 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC5CE3B21886445100439429 = {
+			isa = PBXGroup;
+			children = (
+				EC5CE3C61886445100439429 /* Dream Machine */,
+				EC5CE3ED1886445100439429 /* Dream MachineTests */,
+				EC5CE3BD1886445100439429 /* Frameworks */,
+				EC5CE3BC1886445100439429 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC5CE3BC1886445100439429 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC5CE3BB1886445100439429 /* Dream Machine.app */,
+				EC5CE3E61886445100439429 /* Dream MachineTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC5CE3BD1886445100439429 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC5CE3BE1886445100439429 /* Foundation.framework */,
+				EC5CE3C01886445100439429 /* CoreGraphics.framework */,
+				EC5CE3C21886445100439429 /* UIKit.framework */,
+				EC5CE3C41886445100439429 /* SpriteKit.framework */,
+				EC5CE3E71886445100439429 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC5CE3C61886445100439429 /* Dream Machine */ = {
+			isa = PBXGroup;
+			children = (
+				EC5CE3CF1886445100439429 /* TKAppDelegate.h */,
+				EC5CE3D01886445100439429 /* TKAppDelegate.m */,
+				EC5CE3D21886445100439429 /* Main_iPhone.storyboard */,
+				EC5CE3D51886445100439429 /* Main_iPad.storyboard */,
+				EC5CE3D81886445100439429 /* TKViewController.h */,
+				EC5CE3D91886445100439429 /* TKViewController.m */,
+				EC5CE3DB1886445100439429 /* TKMyScene.h */,
+				EC5CE3DC1886445100439429 /* TKMyScene.m */,
+				EC5CE3DE1886445100439429 /* Spaceship.png */,
+				EC5CE3E01886445100439429 /* Images.xcassets */,
+				EC5CE3C71886445100439429 /* Supporting Files */,
+			);
+			path = "Dream Machine";
+			sourceTree = "<group>";
+		};
+		EC5CE3C71886445100439429 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC5CE3C81886445100439429 /* Dream Machine-Info.plist */,
+				EC5CE3C91886445100439429 /* InfoPlist.strings */,
+				EC5CE3CC1886445100439429 /* main.m */,
+				EC5CE3CE1886445100439429 /* Dream Machine-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC5CE3ED1886445100439429 /* Dream MachineTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC5CE3F31886445100439429 /* Dream_MachineTests.m */,
+				EC5CE3EE1886445100439429 /* Supporting Files */,
+			);
+			path = "Dream MachineTests";
+			sourceTree = "<group>";
+		};
+		EC5CE3EE1886445100439429 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC5CE3EF1886445100439429 /* Dream MachineTests-Info.plist */,
+				EC5CE3F01886445100439429 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC5CE3BA1886445100439429 /* Dream Machine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC5CE3F71886445100439429 /* Build configuration list for PBXNativeTarget "Dream Machine" */;
+			buildPhases = (
+				EC5CE3B71886445100439429 /* Sources */,
+				EC5CE3B81886445100439429 /* Frameworks */,
+				EC5CE3B91886445100439429 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dream Machine";
+			productName = "Dream Machine";
+			productReference = EC5CE3BB1886445100439429 /* Dream Machine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC5CE3E51886445100439429 /* Dream MachineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC5CE3FA1886445100439429 /* Build configuration list for PBXNativeTarget "Dream MachineTests" */;
+			buildPhases = (
+				EC5CE3E21886445100439429 /* Sources */,
+				EC5CE3E31886445100439429 /* Frameworks */,
+				EC5CE3E41886445100439429 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC5CE3EC1886445100439429 /* PBXTargetDependency */,
+			);
+			name = "Dream MachineTests";
+			productName = "Dream MachineTests";
+			productReference = EC5CE3E61886445100439429 /* Dream MachineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC5CE3B31886445100439429 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TK;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Michael Garrido";
+				TargetAttributes = {
+					EC5CE3E51886445100439429 = {
+						TestTargetID = EC5CE3BA1886445100439429;
+					};
+				};
+			};
+			buildConfigurationList = EC5CE3B61886445100439429 /* Build configuration list for PBXProject "Dream Machine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC5CE3B21886445100439429;
+			productRefGroup = EC5CE3BC1886445100439429 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC5CE3BA1886445100439429 /* Dream Machine */,
+				EC5CE3E51886445100439429 /* Dream MachineTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC5CE3B91886445100439429 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC5CE3DF1886445100439429 /* Spaceship.png in Resources */,
+				EC5CE3E11886445100439429 /* Images.xcassets in Resources */,
+				EC5CE3D71886445100439429 /* Main_iPad.storyboard in Resources */,
+				EC5CE3D41886445100439429 /* Main_iPhone.storyboard in Resources */,
+				EC5CE3CB1886445100439429 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC5CE3E41886445100439429 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC5CE3F21886445100439429 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC5CE3B71886445100439429 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC5CE3DA1886445100439429 /* TKViewController.m in Sources */,
+				EC5CE3DD1886445100439429 /* TKMyScene.m in Sources */,
+				EC5CE3CD1886445100439429 /* main.m in Sources */,
+				EC5CE3D11886445100439429 /* TKAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC5CE3E21886445100439429 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC5CE3F41886445100439429 /* Dream_MachineTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC5CE3EC1886445100439429 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC5CE3BA1886445100439429 /* Dream Machine */;
+			targetProxy = EC5CE3EB1886445100439429 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC5CE3C91886445100439429 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC5CE3CA1886445100439429 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EC5CE3D21886445100439429 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC5CE3D31886445100439429 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		EC5CE3D51886445100439429 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC5CE3D61886445100439429 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		EC5CE3F01886445100439429 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC5CE3F11886445100439429 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC5CE3F51886445100439429 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC5CE3F61886445100439429 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC5CE3F81886445100439429 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dream Machine/Dream Machine-Prefix.pch";
+				INFOPLIST_FILE = "Dream Machine/Dream Machine-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EC5CE3F91886445100439429 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dream Machine/Dream Machine-Prefix.pch";
+				INFOPLIST_FILE = "Dream Machine/Dream Machine-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EC5CE3FB1886445100439429 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Dream Machine.app/Dream Machine";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dream Machine/Dream Machine-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Dream MachineTests/Dream MachineTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EC5CE3FC1886445100439429 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Dream Machine.app/Dream Machine";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dream Machine/Dream Machine-Prefix.pch";
+				INFOPLIST_FILE = "Dream MachineTests/Dream MachineTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC5CE3B61886445100439429 /* Build configuration list for PBXProject "Dream Machine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC5CE3F51886445100439429 /* Debug */,
+				EC5CE3F61886445100439429 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC5CE3F71886445100439429 /* Build configuration list for PBXNativeTarget "Dream Machine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC5CE3F81886445100439429 /* Debug */,
+				EC5CE3F91886445100439429 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC5CE3FA1886445100439429 /* Build configuration list for PBXNativeTarget "Dream MachineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC5CE3FB1886445100439429 /* Debug */,
+				EC5CE3FC1886445100439429 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC5CE3B31886445100439429 /* Project object */;
+}
