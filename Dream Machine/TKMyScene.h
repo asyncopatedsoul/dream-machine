@@ -8,6 +8,8 @@
 
 #import <SpriteKit/SpriteKit.h>
 
-@interface TKMyScene : SKScene
+@interface TKMyScene : SKScene <SKPhysicsContactDelegate>
+
+@property (nonatomic,retain) SKNode* worldNode;
 
 @end

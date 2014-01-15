@@ -14,18 +14,63 @@
     if (self = [super initWithSize:size]) {
         /* Setup your scene here */
         
-        self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
+        //self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
+        self.backgroundColor = [UIColor whiteColor];
         
-        SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
+        self.anchorPoint = CGPointMake(0.5, 0.5); //0,0 to 1,1
+        self.worldNode = [SKNode node];
+        [self addChild:self.worldNode];
         
-        myLabel.text = @"Hello, World!";
-        myLabel.fontSize = 30;
-        myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
-                                       CGRectGetMidY(self.frame));
+        [self setupTerrain];
         
-        [self addChild:myLabel];
+        self.physicsWorld.gravity = CGVectorMake(0.0, -10.0);
+        self.physicsWorld.contactDelegate = self;
+        
+        [self setupToys];
     }
     return self;
+}
+
+-(void) moveToy: (SKSpriteNode*) toy toPoint: (CGPoint)rallyPoint
+{
+    NSLog(@"executeMovement toy position: %f,%f", self.position.x, self.position.y);
+    
+    if (_actionPoint.x==0.0 && _actionPoint.y==0.0)
+        return;
+    
+    CGPoint movementTarget = CGPointMake(self.position.x+_actionPoint.x, self.position.y+_actionPoint.y);
+    SKAction *movementAction = [SKAction moveTo:movementTarget duration:_actionMagnitude/_movementSpeed];
+    SKAction *movementDoneAction = [SKAction runBlock:(dispatch_block_t)^() {
+        NSLog(@"Movement Completed");
+    }];
+    
+    
+    
+    SKAction *moveActionWithDone = [SKAction sequence:@[movementAction,movementDoneAction]];
+    [self runAction:moveActionWithDone withKey:@"isMoving"];
+}
+
+-(void) setupToys
+{
+    SKSpriteNode* toy = [SKSpriteNode spriteNodeWithColor:[UIColor blueColor] size: CGSizeMake(50.0, 50.0)];
+    toy.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:CGSizeMake(50.0, 50.0)];
+    toy.physicsBody.mass = 1.0;
+    toy.physicsBody.dynamic = YES;
+    
+    toy.position = CGPointMake(0.0, 300.0);
+    [self.worldNode addChild:toy];
+}
+
+-(void) setupTerrain
+{
+    //self.view.frame.size.width
+    SKSpriteNode* groundNode = [SKSpriteNode spriteNodeWithColor:[UIColor brownColor] size:CGSizeMake(2000.0, 100.0) ];
+    groundNode.position = CGPointMake(0.0,-300.0);
+    [self.worldNode addChild:groundNode];
+
+    groundNode.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:CGSizeMake(2000.0, 100.0)];
+    groundNode.physicsBody.mass = 1.0;
+    groundNode.physicsBody.dynamic = NO;
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
